@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/base.less">
+    <link rel="stylesheet/less" href="./css/bijia.less">
+    <script src="./js/less.js"></script>
+</head>
+<body>
+<!--header start 头部-->
+<div id="header" class="clearfix">
+    <div class="logo">
+        <a href="#">
+            <img src="./images/header_logo.png" alt="">
+        </a>
+    </div>
+    <div class="app_download">
+        <a href="#">
+            <img src="./images/header_app.png" alt="">
+        </a>
+    </div>
+</div>
+<!--header end-->
+
+<!--search start 搜索-->
+<div id="search">
+    <form action="" class="form_search">
+        <input type="text" placeholder="请输入你想选择的商品">
+        <input type="button" value="搜索">
+    </form>
+</div>
+<!--search end-->
+
+<!--product-bijia start-->
+    <div id="product-bijia">
+        <!--首页 全部分类-->
+        <div class="product-bijia-title">
+            <a href=""class="list-title1">首页</a> >
+            <a href="" class="list-title2">全部分类</a> >
+            <a href="" class="list-title3">乐视TV(Letv)S50</a> >
+            <a href="" class="select">筛选</a>
+        </div>
+
+        <!--图片 名字-->
+        <div class="product-list-pt">
+            <div class="product-name">
+                乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视
+            </div>
+            <div class="product-img">
+                <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视" width="170">
+            </div>
+            <div class="product-collect">
+                <a href="#">
+                    <img src="http://www.zuyushop.com/wap/images/sc.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!--比价购买-->
+        <div class="product-list-tab">
+            <ul>
+                <li class="bijia-buy"><a href="#">比价购买</a></li>
+                <li class="bijia-pro"><a href="#">产品参数</a></li>
+                <li><a href="#">评价(2322)</a></li>
+            </ul>
+        </div>
+
+        <!--京东图标-->
+        <div class="product_list_plist clearfix">
+            <span>
+               <a href="#"><img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt=""></a></span>
+            <span><a href="#">京东商城</a></span>
+            <span>
+               ￥1990
+           </span>
+            <span><a href="" class="product-list-go">去购买</a></span>
+            <div>
+                * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <!--网友评价-->
+        <div class="product-com-title">
+            <div>网友评价</div>
+        </div>
+
+        <!--网友评价 信息列表-->
+        <div class="product-com-list">
+            <ul class="product-com-ul">
+                <li>
+                    <div class="clearfix">
+                        <span class="pull-left com-name">b***r</span>
+                        <span class="pull-right com-time">2016/10/1</span>
+                    </div>
+                    <div class="clearfix">
+                         <span class="star pull-left com-star">
+                             <em class="star5"></em>
+                         </span>
+                         <span class="pull-right com-from">
+                             购买自：京东商城
+                         </span>
+                    </div>
+                    <div class="com-content">使用了一周整体不错，主要是为了看纪录片和足球。装在窗户上有种大鱼缸的感觉哈！清晰度不错色彩也可以，应该说对得起2200的价格！还送了五年乐视会员，看英超所有比赛都free，但乐观乐视内容这块还不太丰富，应为家里也有百事通bestv和小米盒子，比较了下，电影百事通最好，纪录片小米最好，只有体育这块乐视比那两家好，还要多努力啊！电视本身有个不足，音响太差，太山寨了！
+                        而且不支持3.5mm接口或红白莲音频输出，害得我折腾半天，必须买光纤音频线
+                    </div>
+                </li>
+            </ul>
+            <div class="more">
+                <a href="" class="morein">查看更多评价</a>
+            </div>
+        </div>
+    </div>
+<!--product-bijia end-->
+
+<!--footer start  尾部-->
+<div id="footer" class="clearfix">
+    <div class="login-top">
+                    <span class="login">
+                        <a href="#">登入</a>
+                    </span>
+                    <span class="resgiter">
+                        <a href="#">注册</a>
+                    </span>
+                    <span class="goTop">
+                        <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+                        <a href="#">返回顶部</a>
+                    </span>
+    </div>
+    <div class="login-bottom">
+        <div class="p-top">
+            <span>手机APP下载</span><span>慢慢买手机版</span><span>掌上比价平台</span>
+            <p> m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+<!--footer end -->
+
+<!-- 标题-->
+<script type="text/html" id="product-Title">
+    {{each result as value index}}
+    <a href=""class="list-title1">首页</a> >
+    <a href="" class="list-title2">全部分类</a> >
+    <a href="" class="list-title3">{{value.productName}}</a> >
+    <a href="" class="select">筛选</a>
+    {{/each}}
+</script>
+
+<!-- 图片-->
+<script type="text/html" id="product-Pic">
+    {{each result as value index}}
+    <div class="product-name">
+       {{value.productName}}
+    </div>
+    <div class="product-img">
+       {{#value.productImg}}
+    </div>
+    <div class="product-collect">
+        <a href="#">
+            <img src="http://www.zuyushop.com/wap/images/sc.jpg" alt="">
+        </a>
+    </div>
+    {{/each}}
+</script>
+
+<!--评论-->
+<script type="text/html" id="product-List">
+    {{each result as value index}}
+    <li>
+        <div class="clearfix">
+            <span class="pull-left com-name">{{value.comName}}</span>
+            <span class="pull-right com-time">{{value.comTime}}</span>
+        </div>
+        <div class="clearfix">
+                         <span class="star pull-left com-star">
+                             <em class="star5"></em>
+                         </span>
+                         <span class="pull-right com-from">
+                             {{value.comFrom}}
+                         </span>
+        </div>
+        <div class="com-content">
+            {{value.comContent}}
+        </div>
+    </li>
+    {{/each}}
+</script>
+
+</body>
+</html>
+<script src="./lib/jquery/jquery.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<script src="./js/template.js"></script>
+<script src="./js/bijia.js"></script>

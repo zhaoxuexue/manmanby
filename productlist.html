@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>28期慢慢买项目</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/base.less">
+    <link rel="stylesheet/less" href="./css/productlist.less">
+    <script src="./js/less.js"></script>
+</head>
+<body>
+<!--header start 头部-->
+<div id="header" class="clearfix">
+    <div class="logo">
+        <a href="#">
+            <img src="./images/header_logo.png" alt="">
+        </a>
+    </div>
+    <div class="app_download">
+        <a href="#">
+            <img src="./images/header_app.png" alt="">
+        </a>
+    </div>
+</div>
+<!--header end-->
+
+<!--search start 搜索-->
+<div id="search">
+    <form action="" class="form_search">
+        <input type="text" placeholder="请输入你想选择的商品">
+        <input type="button" value="搜索">
+    </form>
+</div>
+    
+<!--nav start -->
+<div id="nav">
+    <span><a href="">首页</a></span>
+    <span><a href="">全部分类</a></span>
+    <span><a href="" class="category-title"></a></span>
+    <a href="">筛选</a>
+</div>
+<!--nav end-->
+
+   <!--product-con start-->
+<div id="product-con">
+    <ul>
+        <!--<li>-->
+            <!--<a href="#">-->
+                <!--<div class="pic">-->
+                    <!--<img src="http://img2014.zuyushop.com/ProPic/201412/Thumb/Thumb_2014120015214690353.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="test">-->
+                    <!--<h3>奥克斯(AUX) KFR-25GW/FK01+3 1匹 挂壁式定速冷暖空调</h3>-->
+                    <!--<div class="price">￥1499.00</div>-->
+                    <!--<div class="other">-->
+                        <!--<span>报价(4)</span><span>评论(2403)</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+        <!--</li>-->
+    </ul>
+    <div class="page">
+        <span class="previous"><a href="#">上一页</a></span>
+        <span>
+            <select name="" id="select">
+                <!--<option value="1">1</option>-->
+                <!--<option value="2">2</option>-->
+                <!--<option value="3">3</option>-->
+            </select>
+        </span>
+        <span class="next"><a href="#">下一页</a></span>
+    </div>
+</div>
+<!--product-con end-->
+
+<!--footer start  尾部-->
+<div id="footer" class="clearfix">
+    <div class="login-top">
+                    <span class="login">
+                        <a href="#">登入</a>
+                    </span>
+                    <span class="resgiter">
+                        <a href="#">注册</a>
+                    </span>
+                    <span class="goTop">
+                        <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+                        <a href="#">返回顶部</a>
+                    </span>
+    </div>
+    <div class="login-bottom">
+        <div class="p-top">
+            <span>手机APP下载</span><span>慢慢买手机版</span><span>掌上比价平台</span>
+            <p> m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+<!--footer end -->
+
+<script type="text/html" id="category-Product">
+    {{each result as value index}}
+    <li>
+        <a href="./bijia.html?productid={{value.productId}}">
+            <div class="pic">
+                {{#value.productImg}}
+            </div>
+            <div class="test">
+                <h3>{{value.productName}}</h3>
+                <div class="price">{{value.productPrice}}</div>
+                <div class="other">
+                    <span>{{value.productQuote}}</span><span>{{value.productCom}}</span>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+</body>
+</html>
+<script src="./lib/jquery/jquery.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<script src="./js/template.js"></script>
+<script src="./js/productlist.js"></script>

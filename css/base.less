@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+select,
+form ,
+button {
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+textarea {
+  width: 95%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover, a:focus {
+
+  text-decoration: none;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+img {
+  border: none;
+}
+
+input,
+img {
+  vertical-align: middle;
+}
+
+body {
+  color: #000;
+  font-family: arial;
+  background: #FFF;
+  overflow-x: hidden;
+}
+
+//header css 头部
+#header{
+  height: 50px;
+  line-height: 50px;
+  background-color: #ff841d;
+  padding: 0 10px;
+  .logo{
+    float: left;
+    a{
+      img{
+        width: 190px;
+        height: 25px;
+      }
+    }
+  }
+  .app_download{
+    float: right;
+    a{
+      img{
+        width: 34px;
+        height: 34px;
+      }
+    }
+  }
+}
+//header css
+
+//search css 搜索
+#search{
+  padding: 10px;
+  .form_search{
+    display: flex;
+    input[type="text"]{
+      flex: 1;
+      height: 30px;
+      line-height: 30px;
+      background-color: #f1f1f1;
+      border: none;
+      border-radius: 15px;
+      padding-left: 18px;
+      margin-right:10px;
+    }
+    input[type="button"]{
+      width: 63px;
+      height: 30px;
+      line-height: 30px;
+      color: white;
+      background-color: #ff841d;
+      border: none;
+      border-radius: 15px;
+    }
+  }
+}
+//search css
+
+//footer css 尾部
+#footer{
+  .login-top{
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    background-color: #efefef;
+    margin-top: 10px;
+    .login{
+      float: left;
+      width: 30%;
+      border-right: 1px solid #c4c4c4;
+    }
+    .resgiter{
+      float: left;
+      width: 30%;
+      border-right: 1px solid #c4c4c4;
+    }
+    .goTop{
+      float: left;
+      width:40%;
+    }
+  }
+  .login-bottom{
+    text-align: center;
+    font-size: 12px;
+    .p-top{
+      margin-top: 10px;
+      margin-bottom: 0;
+      span{
+        margin-right: 5px;
+      }
+      span:first-child{
+        color: red;
+      }
+      p{
+
+      }
+    }
+  }
+}
+//footer css

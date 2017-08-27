@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>28期慢慢买项目</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/base.less">
+    <link rel="stylesheet/less" href="./css/category.less">
+    <script src="./js/less.js"></script>
+</head>
+<body>
+<!--header start 头部-->
+<div id="header" class="clearfix">
+    <div class="logo">
+        <a href="#">
+            <img src="./images/header_logo.png" alt="">
+        </a>
+    </div>
+    <div class="app_download">
+        <a href="#">
+            <img src="./images/header_app.png" alt="">
+        </a>
+    </div>
+</div>
+<!--header end-->
+
+<!--search start 搜索-->
+<div id="search">
+    <form action="" class="form_search">
+        <input type="text" placeholder="请输入你想选择的商品">
+        <input type="button" value="搜索">
+    </form>
+</div>
+<!--search end-->
+
+ <!--category start 类别-->
+    <div id="category" class="clearfix">
+        <ul class="category-ul">
+            <!--<li>-->
+                <!--<a href="#">大家电</a>-->
+                <!--<ul class="clearfix">-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="#">大家电</a>-->
+                <!--<ul class="clearfix">-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="#">大家电</a>-->
+                <!--<ul class="clearfix">-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                    <!--<li><a href="#">电视</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+        </ul>
+    </div>
+ <!--category end-->
+<!--footer start  尾部-->
+<div id="footer" class="clearfix">
+    <div class="login-top">
+                    <span class="login">
+                        <a href="#">登入</a>
+                    </span>
+                    <span class="resgiter">
+                        <a href="#">注册</a>
+                    </span>
+                    <span class="goTop">
+                        <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+                        <a href="#">返回顶部</a>
+                    </span>
+    </div>
+    <div class="login-bottom">
+        <div class="p-top">
+            <span>手机APP下载</span><span>慢慢买手机版</span><span>掌上比价平台</span>
+            <p> m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+<!--footer end -->
+
+<!--category-title-->
+<script type="text/html" id="category-title">
+    {{each result as value index}}
+    <li>
+        <a href="#" data-title-id={{value.titleId}}>{{value.title}}</a>
+        <ul class="clearfix">
+
+        </ul>
+    </li>
+    {{/each}}
+</script>
+
+<!--categort-product-->
+<script type="text/html" id="category-product">
+    {{each result as value index}}
+         <li><a href="./productlist.html?categoryid={{value.categoryId}}&pageid=1">{{value.category}}</a></li>
+    {{/each}}
+</script>
+</body>
+</html>
+<script src="./lib/jquery/jquery.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<script src="./js/template.js"></script>
+<script src="./js/category.js"></script>
